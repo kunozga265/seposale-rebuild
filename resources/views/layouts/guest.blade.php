@@ -10,25 +10,26 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Teko:wght@300;400;500;600;700&amp;display=swap"
             rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome-all.css" rel="stylesheet">
-        <link href="css/owl.css" rel="stylesheet">
-        <link href="css/flaticon.css" rel="stylesheet">
-        <link href="css/linoor-icons-2.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="css/jquery-ui.css" rel="stylesheet">
-        <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-        <link href="css/hover.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/jarallax.css">
-        <link href="css/custom-animate.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+{{--        <link href="{{asset('css/fontawesome-all.css')}}" rel="stylesheet">--}}
+        <link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
+        <link href="{{asset('css/owl.css')}}" rel="stylesheet">
+        <link href="{{asset('css/flaticon.css')}}" rel="stylesheet">
+        <link href="{{asset('css/linoor-icons-2.css')}}" rel="stylesheet">
+        <link href="{{asset('css/animate.css')}}" rel="stylesheet">
+        <link href="{{asset('css/jquery-ui.css')}}" rel="stylesheet">
+        <link href="{{asset('css/jquery.fancybox.min.css')}}" rel="stylesheet">
+        <link href="{{asset('css/hover.css')}}" rel="stylesheet">
+        <link rel="stylesheet" href="{{asset('css/jarallax.css')}}">
+        <link href="{{asset('css/custom-animate.css')}}" rel="stylesheet">
+        <link href="{{asset('css/style.css')}}" rel="stylesheet">
         <!-- rtl css -->
-        <link href="css/rtl.css" rel="stylesheet">
+        <link href="{{asset('css/rtl.css')}}" rel="stylesheet">
         <!-- Responsive File -->
-        <link href="css/responsive.css" rel="stylesheet">
+        <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
 
         <!-- Color css -->
-        <link rel="stylesheet" id="jssDefault" href="css/colors/color-default.css">
+        <link rel="stylesheet" id="jssDefault" href="{{asset('css/colors/color-default.css')}}">
 
         <link rel="shortcut icon" href="images/favicon.png" id="fav-shortcut" type="image/x-icon">
         <link rel="icon" href="images/favicon.png" id="fav-icon" type="image/x-icon">
@@ -37,9 +38,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="{{asset('js/respond.js')}}"></script><![endif]-->
         <!-- Scripts -->
 {{--        @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+        @livewireStyles
     </head>
     <body >
 
@@ -58,9 +60,9 @@
                     <div class="inner-container clearfix">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="{{route('home')}}" title="Linoor - DIgital Agency HTML Template"><img
-                                        src="images/logo.png" id="thm-logo" alt="Linoor - DIgital Agency HTML Template"
-                                        title="Linoor - DIgital Agency HTML Template"></a></div>
+                            <div class="logo"><a href="{{route('home')}}" title="Seposale Limited"><img
+                                        src="{{asset('images/logo.png')}}" id="thm-logo" alt="Seposale Limited"
+                                        title="Seposale Limited"></a></div>
                         </div>
                         <div class="nav-outer clearfix">
                             <!--Mobile Navigation Toggler-->
@@ -71,33 +73,28 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="">
-                                            <a href="#">Home</a>
+                                        <li class="{{request()->is('home') ? 'current' : '' }}">
+                                            <a href="{{route('home')}}">Home</a>
                                         </li>
-                                        <li class="">
-                                            <a href="#">About Us</a>
+                                        <li class="{{request()->is('about') ? 'current' : '' }}">
+                                            <a href="{{route('about')}}">About</a>
                                         </li>
-                                        <li class="">
-                                            <a href="#">Shop</a>
+                                        <li class="{{request()->is('shop') ? 'current' : '' }}">
+                                            <a href="{{route('shop')}}">Shop</a>
                                         </li>
-                                        <li class="">
-                                            <a href="#">Projects</a>
+                                        <li class="{{request()->is('projects') ? 'current' : '' }}">
+                                            <a href="{{route('projects')}}">Projects</a>
                                         </li>
-                                        <li class="">
-                                            <a href="#">Contact</a>
+                                        <li class="{{request()->is('contact-us') ? 'current' : '' }}">
+                                            <a href="{{route('contact')}}">Contact</a>
                                         </li>
-
                                     </ul>
                                 </div>
                             </nav>
                         </div>
 
                         <div class="other-links clearfix">
-                            <!-- cart btn -->
-                            <div class="cart-btn">
-                                <a href="#" class="theme-btn cart-toggler"><span
-                                        class="flaticon-shopping-cart"></span></a>
-                            </div>
+                            <livewire:cart />
                             <!--Search Btn-->
                             <div class="search-btn">
                                 <button type="button" class="theme-btn search-toggler"><span
@@ -143,10 +140,14 @@
                     </nav>
                     <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
                     <div class="side-menu__content">
-                        <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of
-                            other agencies.</p>
-                        <p><a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a> <br> <a href="tel:888-999-0000">888
-                                999 0000</a></p>
+{{--                        <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of--}}
+{{--                            other agencies.</p>--}}
+                        <p><a href="mailto:needhelp@linoor.com">info@seposale.com</a> <br>
+{{--                            <a href="tel:888-999-0000">888--}}
+{{--                                999 0000</a>--}}
+                            <a href="tel:+265 992 478 408"><span class="number">+265 992 478 408</span></a>
+                            <a href="tel:+265 888 699 977"><span class="number">+265 888 699 977</span></a>
+                        </p>
                         <div class="side-menu__social">
                             <a href="https://www.facebook.com/seposalecompany/"><i class="fab fa-facebook-square"></i></a>
                             <a href="https://x.com/seposalecompany/"><i class="fab fa-twitter"></i></a>
@@ -182,7 +183,7 @@
                         <div class="shape-2 wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms"></div>
                         <h2>Let's Get Your Project <br>Started!</h2>
                         <div class="link-box">
-                            <a class="theme-btn btn-style-two" href="#">
+                            <a class="theme-btn btn-style-two" href="{{route('contact')}}">
                                 <i class="btn-curve"></i>
                                 <span class="btn-title">Contact us</span>
                             </a>
@@ -224,11 +225,10 @@
                                         <div class="row clearfix">
                                             <div class="col-md-12 col-sm-12">
                                                 <ul>
-                                                    <li><a href="#">About</a></li>
-                                                    <li><a href="#">Meet Our Team</a></li>
-                                                    <li><a href="#">Our Portfolio</a></li>
-{{--                                                    <li><a href="#">Latest News</a></li>--}}
-                                                    <li><a href="#">Projects</a></li>
+                                                    <li><a href="{{route('about')}}">About</a></li>
+                                                    <li><a href="{{route('shop')}}">Shop</a></li>
+                                                    <li><a href="{{route('projects')}}">Projects</a></li>
+                                                    <li><a href="{{route('contact')}}">Contact Us</a></li>
                                                 </ul>
                                             </div>
 {{--                                            <div class="col-md-6 col-sm-12">--}}
@@ -305,25 +305,28 @@
 
 
 
-        <script src="js/jquery.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/TweenMax.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/jquery.fancybox.js"></script>
-        <script src="js/owl.js"></script>
-        <script src="js/mixitup.js"></script>
-        <script src="js/appear.js"></script>
-        <script src="js/wow.js"></script>
-        <script src="js/jQuery.style.switcher.min.js"></script>
+        <script src="{{asset('js/jquery.js')}}"></script>
+        <script src="{{asset('js/popper.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/TweenMax.js')}}"></script>
+        <script src="{{asset('js/jquery-ui.js')}}"></script>
+        <script src="{{asset('js/jquery.fancybox.js')}}"></script>
+        <script src="{{asset('js/owl.js')}}"></script>
+        <script src="{{asset('js/mixitup.js')}}"></script>
+        <script src="{{asset('js/appear.js')}}"></script>
+        <script src="{{asset('js/wow.js')}}"></script>
+        <script src="{{asset('js/jQuery.style.switcher.min.js')}}"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js">
         </script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jarallax.min.js"></script>
-        <script src="js/custom-script.js"></script>
+        <script src="{{asset('js/jquery.easing.min.js')}}"></script>
+        <script src="{{asset('js/jarallax.min.js')}}"></script>
+        <script src="{{asset('js/custom-script.js')}}"></script>
 
-        <script src="js/lang.js"></script>
-        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <script src="js/color-switcher.js"></script>
+{{--        <script src="{{asset('js/lang.js')}}"></script>--}}
+{{--        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>--}}
+        <script src="{{asset('js/color-switcher.js')}}"></script>
+
+        @livewireScripts
+        @stack("scripts")
     </body>
 </html>

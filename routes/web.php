@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/shop', [PageController::class, 'shop'])->name('shop');
+Route::get('/projects', [PageController::class, 'projects'])->name('projects');
+Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
+Route::get('/cart', [PageController::class, 'cart'])->name('cart');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
