@@ -1,5 +1,5 @@
 <div>
-    <section class="cart-page customer-details" >
+    <section class="cart-page" >
         <div class="auto-container">
             <h3 class="heading">Customer Details<span class="dot">.</span></h3>
             <div class="default-form">
@@ -31,12 +31,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="cart-page">
-        <div class="auto-container">
-            <h3 class="heading">Products and Services<span class="dot">.</span></h3>
+            <h3 class="heading mt-40">Products and Services<span class="dot">.</span></h3>
             <div class="table-responsive">
                 <table class="table cart-table">
                     <thead>

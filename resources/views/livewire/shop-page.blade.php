@@ -18,17 +18,17 @@
                     </div><!-- /.shop-sidebar -->
                 </div><!-- /.col-lg-3 -->
                 <div class="col-lg-9">
-                    <div class="product-sorting default-form">
-                        <p>Showing 1–9 of 12 results</p>
-                        <div class="form-group">
-                            <select class="custom-select-box">
-                                <option value="">Sort by Price</option>
-                                <option value="">Sort by Date</option>
-                                <option value="">Sort by Ratings</option>
-                            </select>
-                        </div><!-- /.form-group -->
+{{--                    <div class="product-sorting default-form">--}}
+{{--                        <p>Showing 1–9 of 12 results</p>--}}
+{{--                        <div class="form-group">--}}
+{{--                            <select class="custom-select-box">--}}
+{{--                                <option value="">Sort by Price</option>--}}
+{{--                                <option value="">Sort by Date</option>--}}
+{{--                                <option value="">Sort by Ratings</option>--}}
+{{--                            </select>--}}
+{{--                        </div><!-- /.form-group -->--}}
 
-                    </div><!-- /.product-sorting -->
+{{--                    </div><!-- /.product-sorting -->--}}
 
                     <div>
                         <div class="product-card">
@@ -62,7 +62,7 @@
                                             </div>
                                             <div class="theme-btn btn-style-two">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 22,000</span>
+                                                <span class="btn-title">MK 26,000</span>
                                             </div>
 
                                         </div>
@@ -103,7 +103,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 19,500</span>
+                                                <span class="btn-title">MK 22,500</span>
                                             </a>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 24,000</span>
+                                                <span class="btn-title">MK 28,000</span>
                                             </a>
 
                                         </div>
@@ -155,7 +155,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 510,000</span>
+                                                <span class="btn-title">MK 620,000</span>
                                             </a>
 
                                         </div>
@@ -167,7 +167,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 575,000</span>
+                                                <span class="btn-title">MK 700,000</span>
                                             </a>
 
                                         </div>
@@ -208,7 +208,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 23,000</span>
+                                                <span class="btn-title">MK 30,000</span>
                                             </a>
 
                                         </div>
@@ -220,7 +220,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 510,000</span>
+                                                <span class="btn-title">MK 620,000</span>
                                             </a>
 
                                         </div>
@@ -232,7 +232,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 575,000</span>
+                                                <span class="btn-title">MK 700,000</span>
                                             </a>
 
                                         </div>
@@ -273,7 +273,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 22,000</span>
+                                                <span class="btn-title">MK 26,000</span>
                                             </a>
 
                                         </div>
@@ -285,7 +285,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 470,000</span>
+                                                <span class="btn-title">MK 530,000</span>
                                             </a>
 
                                         </div>
@@ -297,7 +297,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 525,000</span>
+                                                <span class="btn-title">MK 590,000</span>
                                             </a>
 
                                         </div>
@@ -338,7 +338,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 1,500</span>
+                                                <span class="btn-title">MK 1,600</span>
                                             </a>
 
                                         </div>
@@ -392,7 +392,7 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 20,000</span>
+                                                <span class="btn-title">MK 28,000</span>
                                             </a>
 
                                         </div>
@@ -404,22 +404,22 @@
                                             </div>
                                             <a class="theme-btn btn-style-two" href="#">
                                                 <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 350,000</span>
+                                                <span class="btn-title">MK 380,000</span>
                                             </a>
 
                                         </div>
-                                        <div class="variant col-sm-12 col-md-6 col-lg-4 flex ml-2">
-                                            <div class="description">25 Tonnes
-                                                <div class="cart">
-                                                    <span class="flaticon-shopping-cart"></span>
-                                                </div>
-                                            </div>
-                                            <a class="theme-btn btn-style-two" href="#">
-                                                <i class="btn-curve"></i>
-                                                <span class="btn-title">MK 10,000</span>
-                                            </a>
+{{--                                        <div class="variant col-sm-12 col-md-6 col-lg-4 flex ml-2">--}}
+{{--                                            <div class="description">25 Tonnes--}}
+{{--                                                <div class="cart">--}}
+{{--                                                    <span class="flaticon-shopping-cart"></span>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                            <a class="theme-btn btn-style-two" href="#">--}}
+{{--                                                <i class="btn-curve"></i>--}}
+{{--                                                <span class="btn-title">MK 10,000</span>--}}
+{{--                                            </a>--}}
 
-                                        </div>
+{{--                                        </div>--}}
                                     </div>
 
                                 </div>
@@ -428,12 +428,12 @@
                         </div><!-- /.product-card -->
                     </div>
 
-                    <div class="text-center load-more-products">
-                        <a class="theme-btn btn-style-one" href="#">
-                            <i class="btn-curve"></i>
-                            <span class="btn-title">Load More</span>
-                        </a>
-                    </div><!-- /.text-center -->
+{{--                    <div class="text-center load-more-products">--}}
+{{--                        <a class="theme-btn btn-style-one" href="#">--}}
+{{--                            <i class="btn-curve"></i>--}}
+{{--                            <span class="btn-title">Load More</span>--}}
+{{--                        </a>--}}
+{{--                    </div><!-- /.text-center -->--}}
                 </div><!-- /.col-lg-9 -->
             </div><!-- /.row -->
         </div><!-- /.container -->

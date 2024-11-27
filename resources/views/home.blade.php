@@ -637,43 +637,43 @@
                     </div>
                 </div>
 
-                <!--Team-->
-                <div class="team-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="lower-box">
-                            <h5><a href="#">Thokozani Chilaga</a></h5>
-                            <div class="designation">Administrative Officer</div>
-                        </div>
-                    </div>
-                </div>
+{{--                <!--Team-->--}}
+{{--                <div class="team-block">--}}
+{{--                    <div class="inner-box">--}}
+{{--                        <div class="image-box">--}}
+{{--                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>--}}
+{{--                            <ul class="social-links clearfix">--}}
+{{--                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <div class="lower-box">--}}
+{{--                            <h5><a href="#">Thokozani Chilaga</a></h5>--}}
+{{--                            <div class="designation">Administrative Officer</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!--Team-->
-                <div class="team-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="lower-box">
-                            <h5><a href="#">Rhudo Phiri</a></h5>
-                            <div class="designation">Accountant</div>
-                        </div>
-                    </div>
-                </div>
+{{--                <!--Team-->--}}
+{{--                <div class="team-block">--}}
+{{--                    <div class="inner-box">--}}
+{{--                        <div class="image-box">--}}
+{{--                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>--}}
+{{--                            <ul class="social-links clearfix">--}}
+{{--                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>--}}
+{{--                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                        <div class="lower-box">--}}
+{{--                            <h5><a href="#">Rhudo Phiri</a></h5>--}}
+{{--                            <div class="designation">Accountant</div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <!--Team-->
                 <div class="team-block">
                     <div class="inner-box">
