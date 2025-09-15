@@ -584,7 +584,7 @@
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <a href="#"><img src="{{asset('images/mike.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{asset('images/mike.jpeg')}}" alt=""></a>
                             <ul class="social-links clearfix">
                                 <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
                                 <li><a href="#"><span class="fab fa-twitter"></span></a></li>
