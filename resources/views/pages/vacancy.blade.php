@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <x-slot name="title">
-        Contact
+        Vacancies - {{ $vacancy->title }}
     </x-slot>
 
     <!-- Banner Section -->

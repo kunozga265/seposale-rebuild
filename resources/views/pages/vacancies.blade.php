@@ -1,7 +1,7 @@
 <x-guest-layout>
 
     <x-slot name="title">
-        Contact
+        Vacancies
     </x-slot>
 
     <!-- Banner Section -->
