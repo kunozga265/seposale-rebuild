@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Application;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -56,7 +57,8 @@ class NewApplication extends Component
                 $fields[] = $field;
             }else{
                 //upload file
-                $filename = $field["value"]->store($this->vacancy->slug, "public_uploads");
+                $name = Str::slug($this->first_name. "-" .$this->last_name);
+                $filename = $field["value"]->store("uploads/{$this->vacancy->slug}/$name", "public_uploads");
 
                 $fields[]=[
                     "label" => $field["label"],
