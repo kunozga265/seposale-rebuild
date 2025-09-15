@@ -185,8 +185,8 @@ button {
 }
 
 textarea {
-  overflow: hidden;
-  resize: none;
+  /* overflow: hidden; */
+  /* resize: none; */
 }
 
 button {
@@ -2139,6 +2139,7 @@ img.lazy-image.loaded {
 .default-form .form-group input[type="tel"],
 .default-form .form-group input[type="url"],
 .default-form .form-group input[type="file"],
+.default-form .form-group input[type="date"],
 .default-form .form-group input[type="number"],
 .default-form .form-group textarea,
 .default-form .form-group select {
@@ -2180,8 +2181,8 @@ img.lazy-image.loaded {
 }
 
 .default-form .form-group textarea {
-  height: 220px;
-  resize: none;
+  /* height: 220px; */
+  /* resize: none; */
 }
 
 .contact-form .form-group input[type="submit"],
@@ -26617,4 +26618,11 @@ img.lazy-image.loaded {
 .megamenu-popup-active .main-header .other-links,
 .megamenu-popup-active .main-header .header-upper .logo-box {
   display: none;
+}
+
+.body ul{
+  margin-left:40px;
+}
+.body li{
+  list-style: disc;
 }

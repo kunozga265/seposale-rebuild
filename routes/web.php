@@ -18,6 +18,8 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/shop', [PageController::class, 'shop'])->name('shop');
 Route::get('/projects', [PageController::class, 'projects'])->name('projects');
+Route::get('/vacancies', [PageController::class, 'vacancies'])->name('vacancies');
+Route::get('/vacancies/{slug}', [PageController::class, 'vacancy'])->name('vacancy');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::get('/cart', [PageController::class, 'cart'])->name('cart');
 

@@ -85,6 +85,9 @@
                                         <li class="{{request()->is('projects') ? 'current' : '' }}">
                                             <a href="{{route('projects')}}">Projects</a>
                                         </li>
+                                        <li class="{{request()->is('vacancies') ? 'current' : '' }}">
+                                            <a href="{{route('vacancies')}}">Vacancies</a>
+                                        </li>
                                         <li class="{{request()->is('contact-us') ? 'current' : '' }}">
                                             <a href="{{route('contact')}}">Contact</a>
                                         </li>
