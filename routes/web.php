@@ -22,6 +22,8 @@ Route::get('/vacancies', [PageController::class, 'vacancies'])->name('vacancies'
 Route::get('/vacancies/{slug}', [PageController::class, 'vacancy'])->name('vacancy');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::get('/cart', [PageController::class, 'cart'])->name('cart');
+Route::get('/team/{slug}', [PageController::class, 'member'])->name('member');
+Route::get('/team', [PageController::class, 'team'])->name('team');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -461,9 +461,12 @@ figure {
 }
 
 .product-card .variant {
-    /*margin-right: 20px;*/
+    margin-right: 12px;
     margin-bottom: 12px;
     cursor: pointer;
+}
+.product-card .variant p {
+   font-size: 12px;
 }
 
 .product-card .description {
@@ -16689,7 +16692,7 @@ img.lazy-image.loaded {
 .how-it-works-card__inner {
   border-radius: 8px;
   background-color: #fff;
-  padding-bottom: 45px;
+  padding: 45px;
 }
 
 .how-it-works-card__icon {

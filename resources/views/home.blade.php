@@ -1,26 +1,26 @@
 <x-guest-layout>
 
     @push("scripts")
-        <script>
-            var lastScrollTop = 0;
-            $(window).on("scroll", function () {
-                let scroll_y = this.scrollY; //Get scroll height
-                const height = $("#products").offset().top - $('.header-upper').height(); //Get position of products section
-                //get current scroll top position
-                var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    <script>
+        var lastScrollTop = 0;
+        $(window).on("scroll", function() {
+            let scroll_y = this.scrollY; //Get scroll height
+            const height = $("#products").offset().top - $('.header-upper').height(); //Get position of products section
+            //get current scroll top position
+            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
 
-                //only run when the scroll top is within the main header
-                if (scroll_y > 0 && scroll_y < height) {
-                    if (st > lastScrollTop) {
-                        // down scroll, jump to products section
-                        $("html, body").scrollTop(height);
-                    } else if (st < lastScrollTop) {
-                        // up scroll code
-                    } // else was horizontal scroll
-                }
-                lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-            });
-        </script>
+            //only run when the scroll top is within the main header
+            if (scroll_y > 0 && scroll_y < height) {
+                if (st > lastScrollTop) {
+                    // down scroll, jump to products section
+                    $("html, body").scrollTop(height);
+                } else if (st < lastScrollTop) {
+                    // up scroll code
+                } // else was horizontal scroll
+            }
+            lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+        });
+    </script>
     @endpush
 
     <x-slot name="title">
@@ -52,9 +52,9 @@
             <!-- Slide Item -->
             <div class="slide-item">
                 <div class="image-layer" style="background-image: url({{asset('images/background/banner-4.jpg')}});"></div>
-                {{--                <div class="left-top-line"></div>--}}
-                {{--                <div class="right-bottom-curve"></div>--}}
-                {{--                <div class="right-top-curve"></div>--}}
+                {{-- <div class="left-top-line"></div>--}}
+                {{-- <div class="right-bottom-curve"></div>--}}
+                {{-- <div class="right-top-curve"></div>--}}
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="content">
@@ -76,9 +76,9 @@
             <!-- Slide Item -->
             <div class="slide-item">
                 <div class="image-layer" style="background-image: url({{asset('images/background/banner-2.jpg')}});"></div>
-                {{--                <div class="left-top-line"></div>--}}
-                {{--                <div class="right-bottom-curve"></div>--}}
-                {{--                <div class="right-top-curve"></div>--}}
+                {{-- <div class="left-top-line"></div>--}}
+                {{-- <div class="right-bottom-curve"></div>--}}
+                {{-- <div class="right-top-curve"></div>--}}
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="content">
@@ -132,7 +132,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/thanthwe.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/thanthwe.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Cement</span></div>
@@ -149,7 +149,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/akshar.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/akshar.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Cement</span></div>
@@ -166,7 +166,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/quarry-stone.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/quarry-stone.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Quarry Products</span></div>
@@ -183,7 +183,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/pebble-stone.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/pebble-stone.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Quarry Products</span></div>
@@ -201,7 +201,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/dust.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/dust.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Quarry Products</span></div>
@@ -218,7 +218,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/blocks-1.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/blocks-1.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Cement Blocks</span></div>
@@ -235,7 +235,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/blocks-2.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/blocks-2.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Cement Blocks</span></div>
@@ -252,7 +252,7 @@
                         <div class="inner-box">
                             <figure class="image"><img src="{{asset('images/gallery/river-sand.jpg')}}" alt=""></figure>
                             <a href="{{asset('images/gallery/river-sand.jpg')}}" class="lightbox-image overlay-box"
-                               data-fancybox="gallery"></a>
+                                data-fancybox="gallery"></a>
                             <div class="cap-box">
                                 <div class="cap-inner">
                                     <div class="cat"><span>Constructino Sand</span></div>
@@ -264,22 +264,22 @@
                         </div>
                     </div>
 
-{{--                    <!-- Gallery Item -->--}}
-{{--                    <div class="gallery-item mix all river-sand col-lg-3 col-md-6 col-sm-12">--}}
-{{--                        <div class="inner-box">--}}
-{{--                            <figure class="image"><img src="{{asset('images/gallery/river-sand-1.jpg')}}" alt=""></figure>--}}
-{{--                            <a href="{{asset('images/gallery/river-sand-1.jpg')}}" class="lightbox-image overlay-box"--}}
-{{--                               data-fancybox="gallery"></a>--}}
-{{--                            <div class="cap-box">--}}
-{{--                                <div class="cap-inner">--}}
-{{--                                    <div class="cat"><span>River Sand</span></div>--}}
-{{--                                    <div class="title">--}}
-{{--                                        <h5><a href="#">Salima (Medium & Coarse)</a></h5>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+                    {{-- <!-- Gallery Item -->--}}
+                    {{-- <div class="gallery-item mix all river-sand col-lg-3 col-md-6 col-sm-12">--}}
+                    {{-- <div class="inner-box">--}}
+                    {{-- <figure class="image"><img src="{{asset('images/gallery/river-sand-1.jpg')}}" alt=""></figure>--}}
+                    {{-- <a href="{{asset('images/gallery/river-sand-1.jpg')}}" class="lightbox-image overlay-box"--}}
+                    {{-- data-fancybox="gallery"></a>--}}
+                    {{-- <div class="cap-box">--}}
+                    {{-- <div class="cap-inner">--}}
+                    {{-- <div class="cat"><span>River Sand</span></div>--}}
+                    {{-- <div class="title">--}}
+                    {{-- <h5><a href="#">Salima (Medium & Coarse)</a></h5>--}}
+                    {{-- </div>--}}
+                    {{-- </div>--}}
+                    {{-- </div>--}}
+                    {{-- </div>--}}
+                    {{-- </div>--}}
 
                 </div>
 
@@ -308,7 +308,7 @@
                             <ul class="tab-btns tab-buttons clearfix">
                                 <li data-tab="#tab-1" class="tab-btn active-btn"><span>Our Mission</span></li>
                                 <li data-tab="#tab-2" class="tab-btn"><span>Our Vision</span></li>
-                                {{--                                <li data-tab="#tab-3" class="tab-btn"><span>Our History</span></li>--}}
+                                {{-- <li data-tab="#tab-3" class="tab-btn"><span>Our History</span></li>--}}
                             </ul>
 
                             <!--Tabs Container-->
@@ -328,15 +328,15 @@
                                     </div>
                                 </div>
 
-                                {{--                                <!--Tab-->--}}
-                                {{--                                <div class="tab" id="tab-3">--}}
-                                {{--                                    <div class="content">--}}
-                                {{--                                        <div class="text">There are many variations of passages of avaialable but--}}
-                                {{--                                            the majority have in some form, by injected humou or words which don't--}}
-                                {{--                                            look even slightly believable. There are many variations of but the--}}
-                                {{--                                            majority have suffered.</div>--}}
-                                {{--                                    </div>--}}
-                                {{--                                </div>--}}
+                                {{-- <!--Tab-->--}}
+                                {{-- <div class="tab" id="tab-3">--}}
+                                {{-- <div class="content">--}}
+                                {{-- <div class="text">There are many variations of passages of avaialable but--}}
+                                {{-- the majority have in some form, by injected humou or words which don't--}}
+                                {{-- look even slightly believable. There are many variations of but the--}}
+                                {{-- majority have suffered.</div>--}}
+                                {{-- </div>--}}
+                                {{-- </div>--}}
 
                             </div>
                         </div>
@@ -347,21 +347,22 @@
                     <div class="inner">
 
                         <div class="featured-block-two">
-                            {{--                            <div class="image"><img src="{{asset('images/brand-ambassador.jpg')}}" alt=""></div>--}}
-                            <div class="text">
-                                <div class="text">Our foundation is anchored by four core principles that not only define our identity but also fuel our ongoing success and growth.</div>
-                                <ul>
-                                    <li>Integrity</li>
-                                    <li>Excellency</li>
-                                    <li>Innovation</li>
-                                    <li>Team Work</li>
-                                    {{--                                    <li>Lorem Ipsum on the tend to repeat.</li>--}}
-                                </ul>
-                            </div>
+                            {{-- <div class="image"><img src="{{asset('images/brand-ambassador.jpg')}}" alt="">
+                        </div>--}}
+                        <div class="text">
+                            <div class="text">Our foundation is anchored by four core principles that not only define our identity but also fuel our ongoing success and growth.</div>
+                            <ul>
+                                <li>Integrity</li>
+                                <li>Excellency</li>
+                                <li>Innovation</li>
+                                <li>Team Work</li>
+                                {{-- <li>Lorem Ipsum on the tend to repeat.</li>--}}
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -380,7 +381,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"
-                     data-wow-duration="1500ms">
+                    data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-online-banking"></span></div>
@@ -389,7 +390,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
-                     data-wow-delay="300ms" data-wow-duration="1500ms">
+                    data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-quality"></span></div>
@@ -398,7 +399,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"
-                     data-wow-duration="1500ms">
+                    data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-credit-card"></span></div>
@@ -407,7 +408,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
-                     data-wow-delay="300ms" data-wow-duration="1500ms">
+                    data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-clock"></span></div>
@@ -416,7 +417,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
-                     data-wow-delay="600ms" data-wow-duration="1500ms">
+                    data-wow-delay="600ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-collaboration"></span></div>
@@ -425,7 +426,7 @@
                 </div>
                 <!--Service Block-->
                 <div class="service-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInLeft"
-                     data-wow-delay="900ms" data-wow-duration="1500ms">
+                    data-wow-delay="900ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="bottom-curve"></div>
                         <div class="icon-box"><span class="flaticon-monitor"></span></div>
@@ -452,7 +453,7 @@
                             <div class="inner">
                                 <div class="content">
                                     <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="4000" data-stop="10">0</span>
+                                        <span class="count-text" data-speed="4000" data-stop="20">0</span>
                                     </div>
                                     <div class="counter-title">Projects</div>
                                 </div>
@@ -565,7 +566,7 @@
             <div class="content-box">
                 <div class="icon-box"><span class="flaticon-collaboration"></span></div>
                 <h2>Great things in business are never done by one person. <span>They’re done by a team of
-                            people.</span></h2>
+                        people.</span></h2>
             </div>
         </div>
     </section>
@@ -580,118 +581,28 @@
         </div>
         <div class="carousel-box">
             <div class="team-carousel owl-theme owl-carousel">
+                @foreach ($members as $member)
                 <!--Team-->
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <a href="#"><img src="{{asset('images/mike.jpeg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
+                            <a href="#"><img src="{{asset($member->photo)}}" alt=""></a>
+                            <!-- <ul class="social-links clearfix">
                                 <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
                                 <li><a href="#"><span class="fab fa-twitter"></span></a></li>
                                 <li><a href=""><span class="fab fa-instagram"></span></a></li>
                                 <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="lower-box">
-                            <h5><a href="#">Mike Mkali</a></h5>
-                            <div class="designation">Managaing Director</div>
+                            <h5><a href="{{ route('member',['slug'=>$member->slug]) }}">{{ $member->name }}</a></h5>
+                            <div class="designation">{{ $member->position }}</div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <!--Team-->
-                <div class="team-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <a href="#"><img src="{{asset('images/kuno.jpg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="lower-box">
-                            <h5><a href="#">Kunozga Mlowoka</a></h5>
-                            <div class="designation">Chief Executive Officer</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!--Team-->
-                <div class="team-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="lower-box">
-                            <h5><a href="#">Khumbiro Mkali</a></h5>
-                            <div class="designation">Brand Ambassador</div>
-                        </div>
-                    </div>
-                </div>
-
-{{--                <!--Team-->--}}
-{{--                <div class="team-block">--}}
-{{--                    <div class="inner-box">--}}
-{{--                        <div class="image-box">--}}
-{{--                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>--}}
-{{--                            <ul class="social-links clearfix">--}}
-{{--                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                        <div class="lower-box">--}}
-{{--                            <h5><a href="#">Thokozani Chilaga</a></h5>--}}
-{{--                            <div class="designation">Administrative Officer</div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-{{--                <!--Team-->--}}
-{{--                <div class="team-block">--}}
-{{--                    <div class="inner-box">--}}
-{{--                        <div class="image-box">--}}
-{{--                            <a href="#"><img src="{{asset('images/khumbi.jpg')}}" alt=""></a>--}}
-{{--                            <ul class="social-links clearfix">--}}
-{{--                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>--}}
-{{--                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                        <div class="lower-box">--}}
-{{--                            <h5><a href="#">Rhudo Phiri</a></h5>--}}
-{{--                            <div class="designation">Accountant</div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!--Team-->
-                <div class="team-block">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <a href="#"><img src="{{asset('images/prince.jpg')}}" alt=""></a>
-                            <ul class="social-links clearfix">
-                                <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="lower-box">
-                            <h5><a href="#">Prince Tsamba</a></h5>
-                            <div class="designation">Delivery Officer</div>
-                        </div>
-                    </div>
-                </div>
 
 
             </div>

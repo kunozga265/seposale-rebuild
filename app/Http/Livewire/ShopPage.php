@@ -2,20 +2,22 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Log;
 use Livewire\Component;
 
 class ShopPage extends Component
 {
+    public $products;
     public function render()
     {
-//        session()->pull("products");
+        $this->products = Product::all();
         return view('livewire.shop-page');
     }
 
     public function addToCart()
     {
-        $products = session()->get("products",[]);
+        $products = session()->get("products", []);
         $products[] = [
             "name" => "Product Name",
             "quantity" => 1,
@@ -24,10 +26,9 @@ class ShopPage extends Component
         ];
 
         //store data
-        session()->put("products",$products);
+        session()->put("products", $products);
         $count = count($products);
 
-        $this->emitTo("cart","updateCount",$count);
-
+        $this->emitTo("cart", "updateCount", $count);
     }
 }

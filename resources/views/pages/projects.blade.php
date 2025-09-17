@@ -30,11 +30,11 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="events-one__item">
-                        <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
+                        <!-- <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
                             <div class="events-one__date">
                                 Nov 2022
-                            </div><!-- /.events-one__date -->
-                        </div><!-- /.events-one__image -->
+</div>
+                        </div> -->
                         <div class="events-one__content">
                             <h3 class="events-one__title">
                                 <a href="#">
@@ -59,11 +59,11 @@
                 </div><!-- /.col-md-6 col-lg-4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="events-one__item">
-                        <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
+                        <!-- <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
                             <div class="events-one__date">
                                 May 2023
-                            </div><!-- /.events-one__date -->
-                        </div><!-- /.events-one__image -->
+                            </div>
+                        </div>/.events-one__image -->
                         <div class="events-one__content">
                             <h3 class="events-one__title">
                                 <a href="#">
@@ -88,11 +88,11 @@
                 </div><!-- /.col-md-6 col-lg-4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="events-one__item">
-                        <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
+                        <!-- <div class="events-one__image" style="background-image: url({{asset('images/background/banner-5.jpg')}})">
                             <div class="events-one__date">
                                 Jun 2023
-                            </div><!-- /.events-one__date -->
-                        </div><!-- /.events-one__image -->
+                            </div>
+                        </div>/.events-one__image -->
                         <div class="events-one__content">
                             <h3 class="events-one__title">
                                 <a href="#">
@@ -118,12 +118,12 @@
 
             </div><!-- /.row -->
 
-            <div class="more-box text-center">
+            <!-- <div class="more-box text-center">
                 <a class="theme-btn btn-style-one" href="events.html">
                     <i class="btn-curve"></i>
                     <span class="btn-title">Load more posts</span>
                 </a>
-            </div>
+            </div> -->
         </div><!-- /.auto-container -->
     </section><!-- /.events-one -->
 
