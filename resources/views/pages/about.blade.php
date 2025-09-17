@@ -184,9 +184,9 @@
 
     <section class="how-it-works">
         <div class="auto-container">
-              <div class="sec-title centered">
+            <div class="sec-title centered">
                 <h2>Strategic Objectives for Africa's Leading E-commerce
-Platform<span class="dot">.</span></h2>
+                    Platform<span class="dot">.</span></h2>
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-6">

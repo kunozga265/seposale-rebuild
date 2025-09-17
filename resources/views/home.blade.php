@@ -291,14 +291,14 @@
 
 
     <!--About Section-->
-    <section class="agency-section">
+   <section class="agency-section">
         <div class="auto-container">
             <div class="row clearfix">
                 <!--Left Column-->
                 <div class="left-col col-xl-7 col-lg-12 col-md-12 col-sm-12">
                     <div class="inner">
                         <div class="sec-title">
-                            <h2>Briefly about <br>Seposale<span class="dot">.</span></h2>
+                            <h2>What drives<br>Seposale?<span class="dot">.</span></h2>
                         </div>
 
                         <!--Default Tabs-->
@@ -306,9 +306,9 @@
 
                             <!--Tab Btns-->
                             <ul class="tab-btns tab-buttons clearfix">
-                                <li data-tab="#tab-1" class="tab-btn active-btn"><span>Our Mission</span></li>
-                                <li data-tab="#tab-2" class="tab-btn"><span>Our Vision</span></li>
-                                {{-- <li data-tab="#tab-3" class="tab-btn"><span>Our History</span></li>--}}
+                                <li data-tab="#tab-1" class="tab-btn active-btn"><span>Our Vision</span></li>
+                                <li data-tab="#tab-2" class="tab-btn"><span>Our Mission</span></li>
+                                <li data-tab="#tab-3" class="tab-btn"><span>Motto</span></li>
                             </ul>
 
                             <!--Tabs Container-->
@@ -317,26 +317,31 @@
                                 <!--Tab-->
                                 <div class="tab active-tab" id="tab-1">
                                     <div class="content">
-                                        <div class="text">We are committed to providing excellent goods and services that are affordable and easily accessible to our clients, through innovative technology and collaboration.</div>
+                                        <div class="text">To create world's leading integrated business platform,
+                                            combining e-commerce, digital banking, and
+                                            multinational payment systems, backed by in-house
+                                            manufacturing and supplying of construction
+                                            materials.</div>
                                     </div>
                                 </div>
 
                                 <!--Tab-->
                                 <div class="tab" id="tab-2">
                                     <div class="content">
-                                        <div class="text">A world where products and services are acquired online and delivered within the shortest possible.</div>
+                                        <div class="text">To empower our client’s economic growth by providing
+                                            reliable construction materials through an innovative e-
+                                            commerce platform, while building trusted financial
+                                            solutions that connect people, businesses, and markets
+                                            across the world.</div>
                                     </div>
                                 </div>
 
-                                {{-- <!--Tab-->--}}
-                                {{-- <div class="tab" id="tab-3">--}}
-                                {{-- <div class="content">--}}
-                                {{-- <div class="text">There are many variations of passages of avaialable but--}}
-                                {{-- the majority have in some form, by injected humou or words which don't--}}
-                                {{-- look even slightly believable. There are many variations of but the--}}
-                                {{-- majority have suffered.</div>--}}
-                                {{-- </div>--}}
-                                {{-- </div>--}}
+                                <!--Tab-->
+                                <div class="tab" id="tab-3">
+                                    <div class="content">
+                                        <div class="text">Inspired Future</div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -347,22 +352,32 @@
                     <div class="inner">
 
                         <div class="featured-block-two">
-                            {{-- <div class="image"><img src="{{asset('images/brand-ambassador.jpg')}}" alt="">
-                        </div>--}}
-                        <div class="text">
-                            <div class="text">Our foundation is anchored by four core principles that not only define our identity but also fuel our ongoing success and growth.</div>
-                            <ul>
-                                <li>Integrity</li>
-                                <li>Excellency</li>
-                                <li>Innovation</li>
-                                <li>Team Work</li>
-                                {{-- <li>Lorem Ipsum on the tend to repeat.</li>--}}
-                            </ul>
+                            {{-- <div class="image"><img src="images/brand-ambassador.jpg" alt=""></div>--}}
+                            <div class="text">
+                                <div class="text">Our foundation is anchored by four core principles that not only define our identity but also fuel our ongoing success and growth.</div>
+                                <ul>
+                                    <li><b>Innovation & Creativity</b> – Driving growth through
+                                        forward-thinking ideas and technology.</li>
+                                    <li><b>Integrity</b> – Conducting business with honesty,
+                                        transparency, and accountability.</li>
+                                    <li><b>Teamwork</b> – Building success through collaboration
+                                        and shared purpose.</li>
+                                    <li><b>Excellence</b> – Delivering high-quality products, services,
+                                        and customer experiences.</li>
+                                    <li><b>Sustainability</b> – Promoting responsible manufacturing,
+                                        sourcing, and business practices.</li>
+
+
+
+
+
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
