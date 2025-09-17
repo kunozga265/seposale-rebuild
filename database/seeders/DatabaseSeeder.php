@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            // VacancyTableSeeder::class,
+            VacancyTableSeeder::class,
             MemberTableSeeder::class,
             ProductsPhotoTableSeeder::class,
         ]);

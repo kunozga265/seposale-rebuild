@@ -86,6 +86,12 @@ class VacancyTableSeeder extends Seeder
                     "type" => "file",
                     "value" => "",
                 ],
+                  [
+                    "label" => "Enter Your Salary Expectation",
+                    "placeholder" => "",
+                    "type" => "text",
+                    "value" => "",
+                ],
 
             ]),
         ]);
