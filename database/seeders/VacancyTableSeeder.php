@@ -39,7 +39,7 @@ class VacancyTableSeeder extends Seeder
 
             <p><strong>Qualifications &amp; Skills</strong></p>
 
-            <ul><li>Diploma or Degree in Marketing, Business Administration, ICT, or related field.&nbsp;</p>
+            <ul><li>Degree in Marketing, Business Administration, ICT, or related field.&nbsp;</p>
                 </li><li>Proven experience in sales and digital marketing.&nbsp;</p>
                 </li><li>Strong knowledge of social media management, content creation, and SEO.&nbsp;</p>
                 </li><li>Excellent communication and negotiation skills.&nbsp;</p>
