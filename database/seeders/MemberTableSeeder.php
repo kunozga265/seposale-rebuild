@@ -28,7 +28,7 @@ with postgraduate qualifications in Marketing and
 Investment Banking. His mission is to catalyze
 economic transformation in Africa through smart
 innovation and inclusive development.</p>",
-            "photo" => "images/mike.jpeg",
+            "photo" => "images/mike-1.jpeg",
             "links" => json_encode([
                 "facebook" => "",
                 "twitter" => "",
