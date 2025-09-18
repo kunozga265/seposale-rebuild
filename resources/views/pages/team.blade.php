@@ -11,11 +11,11 @@
         <div class="banner-inner">
             <div class="auto-container">
                 <div class="inner-container clearfix">
-                    <h1>Team</h1>
+                    <h1>Leadership</h1>
                     <div class="page-nav">
                         <ul class="bread-crumb clearfix">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li class="active">Team</li>
+                            <li class="active">Leadership</li>
                         </ul>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
     <section class="team-section ">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2>Meet the team<span class="dot">.</span></h2>
+                <h2>Meet the Leadership<span class="dot">.</span></h2>
             </div>
         </div>
         <div class="carousel-box">

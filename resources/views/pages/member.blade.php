@@ -11,11 +11,11 @@
         <div class="banner-inner">
             <div class="auto-container">
                 <div class="inner-container clearfix">
-                    <h1>Team</h1>
+                    <h1>Profile</h1>
                     <div class="page-nav">
                         <ul class="bread-crumb clearfix">
                             <li><a href="{{route('home')}}">Home</a></li>
-                            <li><a href="{{route('team')}}">Team</a></li>
+                            <li><a href="{{route('team')}}">Leadership</a></li>
                             <li class="active">{{ $member->name }}</li>
                         </ul>
                     </div>
